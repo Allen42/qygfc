@@ -4219,3 +4219,8 @@ product-recommendations:has([data-has-recommendations='false']) {
 .facets, .facets-block-wrapper, .facets__form, .facets-toggle, .facets-drawer__title, .facets-drawer__filters { border: none !important; box-shadow: none !important; outline: none !important; }
 .facets-horizontal-remove, .facets-drawer__close { border: none !important; box-shadow: none !important; }
 .facets__summary { border-bottom: 1px solid rgba(0,0,0,0.1) !important; }
+
+/* --- Product Page Minimalist Overrides --- */
+.product__media-wrapper, .product__media-list, .product-media-gallery, .product-media-item { border: none !important; box-shadow: none !important; border-radius: 0 !important; }
+.product-form__buttons { display: flex; flex-direction: column; width: 100%; gap: 12px; }
+.product-form__submit { width: 100% !important; font-family: var(--font-heading--family) !important; }
