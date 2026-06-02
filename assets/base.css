@@ -4213,3 +4213,9 @@ product-recommendations:has([data-has-recommendations='false']) {
     translate: 0px var(--atc-destination, 0px);
   }
 }
+
+
+/* --- QYGFC Minimalist Overrides --- */
+.facets, .facets-block-wrapper, .facets__form, .facets-toggle, .facets-drawer__title, .facets-drawer__filters { border: none !important; box-shadow: none !important; outline: none !important; }
+.facets-horizontal-remove, .facets-drawer__close { border: none !important; box-shadow: none !important; }
+.facets__summary { border-bottom: 1px solid rgba(0,0,0,0.1) !important; }
