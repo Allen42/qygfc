@@ -15,12 +15,12 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>Browse our latest products</p>",
+            "text": "<p>传承东方茶韵，品味极简生活</p>",
             "width": "fit-content",
             "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
+            "alignment": "center",
+            "type_preset": "h1",
+            "font": "var(--font-heading--family)",
             "font_size": "1rem",
             "line_height": "normal",
             "letter_spacing": "normal",
@@ -41,10 +41,10 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Shop all",
+            "label": "探索茶品",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
-            "style_class": "button-secondary",
+            "style_class": "button-primary",
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
@@ -68,7 +68,7 @@
         "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
+        "horizontal_alignment": "center",
         "vertical_alignment": "flex-end",
         "align_baseline": true,
         "horizontal_alignment_flex_direction_column": "center",
@@ -79,13 +79,15 @@
         "section_height_custom": 50,
         "color_scheme": "scheme-6",
         "toggle_overlay": true,
-        "overlay_color": "#12121266",
+        "overlay_color": "#00000033",
         "overlay_style": "solid",
         "gradient_direction": "to bottom",
         "blurred_reflection": false,
         "reflection_opacity": 75,
         "padding-block-start": 100,
-        "padding-block-end": 72
+        "padding-block-end": 72,
+        "border": "none",
+        "border_width": 0
       }
     },
     "product_list_fa6P9H": {
@@ -129,12 +131,12 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3>我们的茶品</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "h4",
-                "font": "var(--font-body--family)",
+                "font": "var(--font-heading--family)",
                 "font_size": "",
                 "line_height": "normal",
                 "letter_spacing": "normal",
@@ -211,9 +213,9 @@
               "settings": {
                 "width": "100%",
                 "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
+                "alignment": "center",
+                "type_preset": "h5",
+                "font": "var(--font-heading--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
@@ -239,7 +241,7 @@
                 "show_tax_info": false,
                 "type_preset": "h6",
                 "width": "100%",
-                "alignment": "left",
+                "alignment": "center",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -281,10 +283,52 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "media_with_content_story": {
+      "type": "media-with-content",
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "settings": {
+            "media_type": "image"
+          }
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "blocks": {
+            "title": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>清韻工夫茶：静心之选</h2>",
+                "type_preset": "h2",
+                "font": "var(--font-heading--family)"
+              }
+            },
+            "description": {
+              "type": "text",
+              "settings": {
+                "text": "<p>源自东方茶道，我们致力于将传承千年的手工制茶工艺与现代极简美学相融合。在这里，您不仅能品味到最纯正的东方茶韵，更能体验一份回归自然的静谧时光。</p>"
+              }
+            }
+          },
+          "block_order": [
+            "title",
+            "description"
+          ]
+        }
+      },
+      "block_order": [
+        "media",
+        "content"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1"
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "product_list_fa6P9H",
+    "media_with_content_story"
   ]
 }
