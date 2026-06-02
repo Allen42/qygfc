@@ -65,7 +65,7 @@
         style: logo_style
       %}
     {% else %}
-      <img src="{{ 'logo.png' | asset_url }}" class="header-logo__image" style="max-height: 50px; {{ logo_style }}" alt="{{ shop.name }}">
+      <img src="{{ 'logo.png' | asset_url }}" class="header-logo__image" style="width: auto !important; max-height: 50px; {{ logo_style }}" alt="{{ shop.name }}">
     {% endif %}
   </span>
 
@@ -84,7 +84,7 @@
           style: inverse_logo_style
         %}
       {% else %}
-        <img src="{{ 'logo.png' | asset_url }}" class="header-logo__image" style="max-height: 50px; {{ inverse_logo_style }}" alt="{{ shop.name }}">
+        <img src="{{ 'logo.png' | asset_url }}" class="header-logo__image" style="width: auto !important; max-height: 50px; {{ inverse_logo_style }}" alt="{{ shop.name }}">
       {% endif %}
     </span>
   {% endif %}
